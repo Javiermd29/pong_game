@@ -8,7 +8,6 @@ public class PlayerPaddle : MonoBehaviour
     public float paddleSpeed = 10f;
     public string inputAxis;
 
-    // Update is called once per frame
     void Update()
     {
         

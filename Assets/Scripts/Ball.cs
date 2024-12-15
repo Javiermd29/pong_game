@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
-
     public float ballSpeed = 10f;
 
     private Rigidbody2D ballRb;
@@ -17,7 +16,6 @@ public class Ball : MonoBehaviour
     private bool isWaiting = false;
     private bool isGameOver = false;
 
-    // Start is called before the first frame update
     void Start()
     {
      
@@ -67,7 +65,6 @@ public class Ball : MonoBehaviour
             }
             else if (transform.position.x > rightLimit)
             {
-                // Gol del jugador izquierdo
                 gameManager.GoalScored(false);
                 StartCoroutine(PrepareBall());
             }

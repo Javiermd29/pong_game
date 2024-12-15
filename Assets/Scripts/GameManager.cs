@@ -58,7 +58,6 @@ public class GameManager : MonoBehaviour
 
     private void EndGame(string winner)
     {
-
         gameOver = true;
 
         winnerText.gameObject.SetActive(true);
